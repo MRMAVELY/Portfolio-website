@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.frame2147206582 {
+  position: relative;
+  width: 1800px;
+  height: 2195px;
+  overflow: hidden;
+
+  .whatsAppImage2025110 {
+    position: absolute;
+    top: -1px;
+    left: 1px;
+    width: 1800px;
+    height: 2195px;
+  }
+
+  .image45 {
+    position: absolute;
+    bottom: -1px;
+    left: 1px;
+    width: 1800px;
+    height: 2195px;
+    rotate: 180deg;
+  }
+}
