@@ -12,5 +12,5 @@ const assets = {
 
 export default function Cloud({ variant = 'right', className = '' }: CloudProps) {
   const src = variant === 'left' ? assets.left : assets.right;
-  return <img src={src} alt="decorative cloud" className={className} />;
+  return <img src={src} alt="decorative cloud" className={`${className} cloud-drift`} />;
 }

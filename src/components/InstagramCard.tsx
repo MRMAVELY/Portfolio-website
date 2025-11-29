@@ -19,8 +19,8 @@ export default function InstagramCard({
   backgroundColor = 'bg-white',
   textColor = 'text-black',
   cardName,
-  width = 'w-48',
-  height = 'h-60'
+  width = 'w-52',
+  height = 'h-100'
 }: InstagramCardProps & { width?: string; height?: string; }) {
   const [isHovered, setIsHovered] = useState(false);
   const [image, setImage] = useState<string | null>(null);
@@ -72,7 +72,7 @@ export default function InstagramCard({
 
   return (
     <div 
-      className={`${position} ${rotation} ${backgroundColor} ${width} ${height} rounded-lg shadow-lg overflow-hidden transition-all duration-300 ${isDragging ? 'scale-105 shadow-xl' : ''} group relative`}
+      className={`${position} ${rotation} ${backgroundColor} ${width} ${height} rounded-lg shadow-lg overflow-hidden transition-all duration-300 ${isDragging ? 'scale-105 shadow-xl' : ''} group relative z-0 lift`}
       onDragOver={handleDragOver}
       onDragLeave={handleDragLeave}
       onDrop={handleDrop}
@@ -133,12 +133,8 @@ export default function InstagramCard({
           onClick={triggerFileInput}
         >
           <Upload className="w-8 h-8 text-gray-400 mb-2" />
-          <span className="text-gray-500 text-sm text-center px-4">
-            Click or drag image here
-          </span>
-          <span className="text-gray-400 text-xs mt-1">
-            Instagram size (4:5)
-          </span>
+          <span className="text-gray-500 text-sm text-center px-4">Click or drag image here</span>
+          <span className="text-gray-400 text-xs mt-1">Instagram size (4:5)</span>
         </div>
       )}
     </div>

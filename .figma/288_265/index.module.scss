@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+.frame2147206602 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 911px;
+  height: 296px;
+  row-gap: 32px;
+
+  .aboutMe3 {
+    flex-shrink: 0;
+    line-height: 59px;
+    letter-spacing: -6.71px;
+    color: #000000;
+    font-family: "Lexend Deca", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 84px;
+    font-weight: 600;
+
+    .aboutMe {
+      letter-spacing: -6.71px;
+      color: #717171;
+      font-family: "Lexend Deca", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 84px;
+      font-weight: 600;
+    }
+
+    .aboutMe2 {
+      letter-spacing: -6.71px;
+      color: #000000;
+      font-family: "Lexend Deca", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+      font-size: 84px;
+      font-weight: 600;
+    }
+  }
+
+  .iMaProductDesignerWi {
+    flex-shrink: 0;
+    align-self: stretch;
+    width: 911px;
+    line-height: 41px;
+    letter-spacing: -0.72px;
+    color: #000000;
+    font-family: "Lexend Deca", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
