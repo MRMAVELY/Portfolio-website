@@ -11,7 +11,6 @@ export default function Home() {
   const [active, setActive] = useState('home');
   const [isScrolling, setIsScrolling] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [motionEnabled, setMotionEnabled] = useState(true);
 
   useEffect(() => {
     const ids = ['home-section', 'about-section', 'case-study-section', 'contact-section'];
@@ -36,11 +35,7 @@ export default function Home() {
     return () => observer.disconnect();
   }, [isScrolling]);
 
-  // Determine motion preference
-  useEffect(() => {
-    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    setMotionEnabled(!prefersReduced);
-  }, []);
+  // motion preference is checked inline where needed via matchMedia
 
   
 

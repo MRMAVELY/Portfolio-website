@@ -7,7 +7,6 @@ interface InstagramCardProps {
   rotation?: string;
   position?: string;
   backgroundColor?: string;
-  textColor?: string;
   cardName?: string;
 }
 
@@ -17,7 +16,6 @@ export default function InstagramCard({
   rotation = '', 
   position = '',
   backgroundColor = 'bg-white',
-  textColor = 'text-black',
   cardName,
   width = 'w-52',
   height = 'h-100'
